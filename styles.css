@@ -1,7 +1,81 @@
+:root {
+  --textcolor: white;
+  --backgroundcolor: #1e1e1e;
+}
+
 body {
   margin: 0; 
   padding: 0;
   font-family: futura-pt, sans-serif;
-  background-color: #1e1e1e;
+  background-color: var(--backgroundcolor);
+  color: var(--textcolor);
 }
 
+#header {
+  font-weight: 900;
+  margin: 0 auto;
+  font-size: 80px;
+  color: #2975bb;
+  margin-bottom: 25px;
+}
+
+#container {
+  width: 800px;
+  height: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 25px;
+}
+
+#infographic {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+#infographicchart {
+  width: 300px;
+}
+
+#infographictxt {
+  font-size: 40px;
+}
+
+
+#plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+#plan1, #plan2, #plan3 {
+  background-color: #3a3a3a;
+  width: 210px;
+  height: 470px;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.plantext {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textcolor);
+  font-size: 25px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.alreadyowned {
+  font-size: 25px;
+}
+
+.alreadyowned:hover {
+  color: green;
+}
