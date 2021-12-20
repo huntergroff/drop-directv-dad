@@ -14,29 +14,28 @@ body {
 #header {
   font-weight: 900;
   margin: 0 auto;
-  font-size: 80px;
+  font-size: 90px;
   color: #2975bb;
   margin-bottom: 25px;
 }
 
 #container {
-  width: 800px;
-  height: 1300px;
+  width: 900px;
   margin: 0 auto;
   text-align: center;
   padding: 25px;
 }
 
-#infographic {
+.infographic {
   display: flex;
   margin-bottom: 40px;
 }
 
-#infographicchart {
+.infographicchart {
   width: 300px;
 }
 
-#infographictxt {
+.infographictxt {
   font-size: 40px;
 }
 
@@ -48,7 +47,7 @@ body {
 
 #plan1, #plan2, #plan3 {
   background-color: #3a3a3a;
-  width: 210px;
+  width: 240px;
   height: 470px;
   text-align: left;
   padding-left: 20px;
@@ -56,8 +55,20 @@ body {
   border-radius: 10px;
 }
 
+#plan1 {
+  color: #ec2326;
+}
+
+#plan2 {
+  color: #23b67b;
+}
+
+#plan3 {
+  color: #f2ca15;
+}
+
 .plantext {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
 }
 
@@ -69,13 +80,53 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: yellow;
+  color: #8671d3;
 }
 
 .alreadyowned {
+  color: #888888;
   font-size: 25px;
 }
 
 .alreadyowned:hover {
-  color: green;
+  color: #22aa3b;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  #container {
+    width: 600px;
+  }
+
+  #header {
+    font-size: 60px;
+  }
+
+  .infographictxt {
+    font-size: 30px;
+  }
+
+  .infographicchart {
+    width: 180px;
+    height: 165px;
+  }
+
+  .infographic {
+    align-items: center;
+  }
+
+  #plan1, #plan2, #plan3 {
+    width: 140px;
+  }
+
+  .plantext {
+    font-size: 30px;
+  }
+
+  a, .alreadyowned {
+  font-size: 20px
+}
+
+
 }
