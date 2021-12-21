@@ -143,8 +143,12 @@ a:hover {
     align-items: center;
   }
 
-  #plan1, #plan2, #plan3 {
+  #plan1, #plan2, #plan3, #p1a, #p2a, #p3a {
     width: 140px;
+  }
+
+  #p1a, #p2a, #p3a {
+    font-size: 12px;
   }
 
   .plantext {
