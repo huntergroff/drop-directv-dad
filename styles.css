@@ -40,23 +40,33 @@ body {
 }
 
 
-#plans {
+#plans, #analysis {
   display: flex;
   justify-content: space-between;
 }
 
+#plans {
+  padding-top: 20px;
+}
+
 #plan1, #plan2, #plan3 {
   background-color: #3a3a3a;
-  width: 240px;
-  height: 470px;
-  text-align: left;
+  border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 10px;
+}
+
+#plan1, #plan2, #plan3, #p1a, #p2a, #p3a {
+  width: 240px;
+  text-align: left;
+}
+
+#p1a, #p2a, #p3a {
+  color: white;
 }
 
 #plan1 {
-  color: #ec2326;
+  color: #e84d56;
 }
 
 #plan2 {
@@ -70,6 +80,11 @@ body {
 .plantext {
   font-size: 40px;
   font-weight: 900;
+}
+
+.costtext {
+  font-size: 20px;
+  padding-top: 36px;
 }
 
 a {
@@ -91,6 +106,18 @@ a:hover {
 .alreadyowned:hover {
   color: #22aa3b;
 }
+
+.planandcost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bluebar {
+  background-color: #2975bb;
+  height: 2px;
+  width: 100%;
+}
+
 
 
 
@@ -122,6 +149,10 @@ a:hover {
 
   .plantext {
     font-size: 30px;
+  }
+
+  .costtext {
+    font-size: 12px;
   }
 
   a, .alreadyowned {
